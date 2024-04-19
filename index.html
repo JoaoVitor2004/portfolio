@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"
+        integrity="sha512-u3fPA7V8qQmhBPNT5quvaXVa1mnnLSXUep5PS1qo5NRzHwG19aHmNJnj1Q8hpA/nBWZtZD4r4AX6YOt5ynLN2g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <a id="voltar-inicio" href="#" title="Voltar para o inicio"><i class="bi bi-arrow-up-circle-fill"></i></a>
+    <header class="cabecalho">
+        <a class="portfolio" href="index.html">Portfolio</a>
+        <nav class="navegacao">
+
+            <input type="checkbox" name="menu-mobile" id="menu-mobile">
+            <label for="menu-mobile">
+                <div class="menu">
+                    <span class="linha"></span>
+                </div>
+            </label>
+
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#tecnologias">Tecnologias</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="home" id="home">
+        <div class="sobre">
+            <h1 id="titulo">João Vitor</h1>
+            <p id="paragrafo"></p>
+            <div class="links">
+                <a href="https://www.instagram.com/joaovitords12/" target="_blank"><i
+                        class="fa-brands fa-instagram link"></i></a>
+                <a href="https://github.com/joaovitor2004" target="_blank"><i class="fa-brands fa-github link"></i></a>
+                <a href="https://www.linkedin.com/in/jo%C3%A3o-vitor-souzaa/" target="_blank"><i
+                        class="fa-brands fa-linkedin-in link"></i></a>
+            </div>
+        </div>
+        <img src="imagens/imagem do linkedin.png" alt="minha imagem">
+        
+    </main>
+    <section class="tecnologias" id="tecnologias" data-aos="fade-up">
+        <h2>Tecnologias</h2>
+        <div class="container playing">
+            <ul class="primeira-linha">
+                <li>
+                    <i class="fa-brands fa-html5"></i>
+                    <span>HTML</span>
+                </li>
+                <li>
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <span>CSS</span>
+                </li>
+                <li>
+                    <i class="fa-brands fa-js"></i>
+                    <span>JAVASCRIPT</span>
+                </li>
+            </ul>
+            <ul class="segunda-linha">
+                <li>
+                    <i class="fa-brands fa-react"></i>
+                    <span>REACT</span>
+                </li>
+                <li>
+                    <i class="fa-brands fa-git-alt"></i>
+                    <span>GIT</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="projetos" id="projetos" data-aos="fade-up">
+        <h2>Projetos</h2>
+        <div class="imagens-projetos">
+            <a class="imagem" href="https://joaovitor2004.github.io/projeto-gta-v/" target="_blank">
+                <img src="imagens/projeto1.jpeg" alt="projeto1">
+            </a>
+            <a class="imagem" href="https://joaovitor2004.github.io/projeto-god-of-war-ragnarok/" target="_blank">
+                <img src="imagens/projeto2.jpeg" alt="projeto2">
+            </a>
+            <a class="imagem" href="https://joaovitor2004.github.io/landing-page-the-last-of-us/" target="_blank">
+                <img src="imagens/projeto3.jpeg" alt="projeto3">
+            </a>
+            <a class="imagem" href="https://joaovitor2004.github.io/projeto-leitor-de-musica/" target="_blank">
+                <img src="imagens/projeto4.jpeg" alt="projeto4">
+            </a>
+        </div>
+    </section>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
