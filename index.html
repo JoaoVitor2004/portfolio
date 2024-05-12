@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="botao.css">
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
@@ -19,43 +20,43 @@
 </head>
 
 <body>
+    <div class="buttons">
+        <button class="btn"><span></span>
+            <p data-start="good luck!" data-text="carregar!" data-title="Meu curriculo"></p>
+        </button>
+    </div>
+    <div class="quadrado"></div>
+    <div class="quadrado"></div>
+    <div class="quadrado"></div>
+    <div class="quadrado"></div>
+    <div class="quadrado"></div>
+    <div class="quadrado"></div>
+    <div class="quadrado"></div>
+    <div class="quadrado"></div>
+    <div class="quadrado"></div>
+    <div class="quadrado"></div>
     <a id="voltar-inicio" href="#" title="Voltar para o inicio"><i class="bi bi-arrow-up-circle-fill"></i></a>
-    <header class="cabecalho">
-        <a class="portfolio" href="index.html">Portfolio</a>
-        <nav class="navegacao">
-
-            <input type="checkbox" name="menu-mobile" id="menu-mobile">
-            <label for="menu-mobile">
-                <div class="menu">
-                    <span class="linha"></span>
-                </div>
-            </label>
-
-            <ul>
-                <li><a href="#home">Inicio</a></li>
-                <li><a href="#tecnologias">Tecnologias</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-            </ul>
-        </nav>
-    </header>
     <main class="home" id="home">
         <div class="sobre">
-            <h1 id="titulo">João Vitor</h1>
-            <p id="paragrafo"></p>
-            <div class="links">
-                <a href="https://www.instagram.com/joaovitords12/" target="_blank"><i
-                        class="fa-brands fa-instagram link"></i></a>
-                <a href="https://github.com/joaovitor2004" target="_blank"><i class="fa-brands fa-github link"></i></a>
-                <a href="https://www.linkedin.com/in/jo%C3%A3o-vitor-souzaa/" target="_blank"><i
-                        class="fa-brands fa-linkedin-in link"></i></a>
+            <div class="subir">
+                <img src="imagens/imagem do linkedin.png" alt="minha imagem">
+                <h1 id="titulo">João Vitor</h1>
+                <p id="paragrafo"></p>
+                <div class="links">
+                    <a class="link" href="https://www.instagram.com/joaovitords12/" target="_blank"><i
+                            class="fa-brands fa-instagram link"></i></a>
+                    <a class="link" href="https://github.com/joaovitor2004" target="_blank"><i
+                            class="fa-brands fa-github link"></i></a>
+                    <a class="link" href="https://www.linkedin.com/in/jo%C3%A3o-vitor-souzaa/" target="_blank"><i
+                            class="fa-brands fa-linkedin-in link"></i></a>
+                </div>
             </div>
         </div>
-        <img src="imagens/imagem do linkedin.png" alt="minha imagem">
-        
     </main>
     <section class="tecnologias" id="tecnologias" data-aos="fade-up">
-        <h2>Tecnologias</h2>
+
         <div class="container playing">
+            <h2>Tecnologias</h2>
             <ul class="primeira-linha">
                 <li>
                     <i class="fa-brands fa-html5"></i>

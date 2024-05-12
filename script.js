@@ -9,7 +9,7 @@ function digitarTexto() {
 
     const intervalo = setInterval(() => {
 
-        if(!char.length) {
+        if (!char.length) {
             return clearInterval(intervalo)
         }
 
