@@ -1,6 +1,6 @@
 # Portfolio
 
-![Capturar](https://github.com/JoaoVitor2004/portfolio/assets/143558833/13c4e6d6-2672-4afe-8889-4bf94bafda11)
+![Captura3](https://github.com/JoaoVitor2004/portfolio/assets/143558833/ca886808-7dbe-46a9-9678-42bb81748ef6)
 
 # 🛠 Ferramenta e tecnologias utilizadas
 
