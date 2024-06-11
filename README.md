@@ -1,12 +1,25 @@
+![Capa Portfolio](https://github.com/JoaoVitor2004/portfolio/assets/143558833/7475aa8e-9135-4256-a44d-ccd4b1990727)
+
 # Portfolio
 
-![Captura3](https://github.com/JoaoVitor2004/portfolio/assets/143558833/ca886808-7dbe-46a9-9678-42bb81748ef6)
+## 🎯 Introdução
 
-# 🛠 Ferramenta e tecnologias utilizadas
+Este projeto tem o objetivo de mostrar o meu portfolio, seção de sobre, tecnologias e alguns dos projetos que eu fiz.
 
-- Visual studio code
-  
-  - HTML
-  - CSS
- 
-<p>🔗 Link para acessar o <a href="https://joaovitor2004.github.io/portfolio/">site</a></p> 
+### ⚙ Guia de instalação
+
+Precisa ter somente um navegador instalado em sua maquina para acessar este <a href="https://JoaoVitor2004/portfolio">endereço</a>
+
+### 🛠 Tecnologias utilizadas
+
+<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="logo do HTML">
+<img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="logo do CSS">
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="logo do JAVASCRIPT">
+
+### 👨‍💻 Autores / Colaboradores
+
+- **João Vitor** - Frontend do projeto - [João Vitor](https://www.linkedin.com/in/jo%C3%A3o-vitor-souzaa/)
+
+### 📃 Licença
+
+Este projeto esta sob a licença [MIT]()
