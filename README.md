@@ -8,7 +8,7 @@ Este projeto tem o objetivo de mostrar o meu portfolio, seção de sobre, tecnol
 
 ### ⚙ Guia de instalação
 
-Precisa ter somente um navegador instalado em sua maquina para acessar este <a href="https://JoaoVitor2004.github.io/portfolio">endereço</a>
+Precisa ter somente um navegador instalado em sua maquina para acessar apartir desse <a href="https://JoaoVitor2004.github.io/portfolio">endereço</a>
 
 ### 🛠 Tecnologias utilizadas
 
