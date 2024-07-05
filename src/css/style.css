@@ -1,0 +1,366 @@
+@import "./reset.css";
+@import "./menu-mobile.css";
+@import "./responsive.css";
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Oswald', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@keyframes flutuar {
+    0% {
+        transform: translateY(0px);
+    }
+
+    60% {
+        transform: translateY(-60px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 60px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.logo {
+    color: #9e7a59;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.navegacao ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navegacao ul li a {
+    color: black;
+    padding: 10px 30px;
+    transition: 0.2s ease-in-out;
+}
+
+.navegacao ul li a:hover {
+    background-color: black;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.navegacao ul .curriculo {
+    background-color: #000;
+    color: #fff;
+    padding: 9px 40px;
+    border-radius: 25px;
+    transition: 0.2s ease-in-out;
+}
+
+.navegacao ul .curriculo:hover {
+    transform: scale(1.1);
+}
+
+.hero {
+    display: flex;
+    flex-flow: row-reverse;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 85vh;
+    text-align: center;
+    padding-top: 80px;
+    position: relative;
+    color: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.hero .background {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    z-index: -1;
+}
+
+.hero img {
+    animation: flutuar 4s linear alternate infinite;
+    width: 400px;
+    max-width: 100%;
+}
+
+.descricao h1 {
+    font-size: 60px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.descricao h2 {
+    color: #9e7a59;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.descricao p {
+    text-align: justify;
+    line-height: 30px;
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+
+.descricao .redes-sociais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    font-size: 25px;
+}
+
+.redes-sociais a.icon {
+    color: #fff;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.redes-sociais a.icon:hover {
+    color: #a37e5c;
+    transform: scale(1.1);
+}
+
+.tecnologias {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.tecnologias h2 {
+    color: #9c7652;
+    text-transform: uppercase;
+    font-size: 40px;
+    margin-bottom: 100px;
+}
+
+.tecnologias .itens {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+    max-width: 100%;
+}
+
+.tecnologias .itens .item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    font-size: 25px;
+    background: #fff;
+    box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
+    width: 200px;
+    height: 220px;
+    padding: 45px 0;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tecnologias .itens .item .btn-tec {
+    background-color: black;
+    color: white;
+    width: 80%;
+    padding: 10px;
+    border-radius: 25px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.tecnologias .itens .item .btn-tec:hover {
+    transform: scale(1.1);
+}
+
+.itens .item .icon {
+    font-size: 60px;
+}
+
+.itens .item #modal {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 500px;
+    max-width: 90%;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+}
+
+.itens .item #modal h2 {
+    margin-bottom: 30px;
+}
+
+.itens .item #modal p {
+    font-size: 21px;
+    line-height: 30px;
+    margin-bottom: 40px;
+}
+
+.itens .item #modal div button {
+    background-color: black;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 5px;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.itens .item #modal div button:hover {
+    transform: scale(1.1);
+}
+
+.tecnologias #fade {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.54);
+}
+
+#fade.hide,
+#modal.hide {
+    opacity: 0;
+    pointer-events: none;
+}
+
+#fade,#modal {
+    opacity: 1;
+    pointer-events: all;
+    transition: 0.6s ease-in-out;
+}
+
+.projetos {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 40px;
+}
+
+.projetos h2 {
+    color: #9c7652;
+    text-transform: uppercase;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.projetos p {
+    margin-bottom: 40px;
+    font-size: 22px;
+}
+
+.projetos .imagens {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.projetos .imagens .img-projeto {
+    width: 700px;
+    max-width: 90%;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.projetos .controle {
+    display: flex;
+    gap: 30px;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+@media (width < 940px) {
+    .cabecalho {
+        padding: 20px 30px;
+    }
+
+    .cabecalho .logo {
+        font-size: 22px;
+    }
+
+    .navegacao ul li a {
+        display: block;
+        color: white;
+        margin-bottom: 10px;
+    }
+
+    .navegacao ul .curriculo {
+        color: black;
+        background-color: white;
+    }
+
+    .hero .background {
+        display: none;
+    }
+
+    .hero {
+        color: #000;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column-reverse;
+    }
+
+    .hero img {
+        width: 200px;
+        animation: none;
+    }
+
+    .redes-sociais a.icon {
+        color: #000;
+    }
+}
+
+@media (width < 700px) {
+    .hero {
+        padding: 80px 30px 0 30px;
+    }
+
+    .tecnologias {
+        height: 200vh;
+    }
+
+    .projetos {
+        padding: 0 30px;
+    }
+}
+
+@media (width < 450px) {
+    .tecnologias {
+        padding-top: 200px;
+        margin-bottom: 100px;
+    }
+}
