@@ -20,6 +20,11 @@
 </head>
 
 <body>
+    <a target="_blank" href="https://api.whatsapp.com/send?phone=+5511933677647&text=Falar%20por%20whatsapp" class="icon-whatsapp">
+        <i class="bi bi-whatsapp"></i>
+    </a>
+
+    </a>
     <header class="cabecalho">
         <a href="#" class="logo">portfolio</a>
         <input type="checkbox" name="menu-hamburguer" id="menu-hamburguer">
@@ -68,6 +73,7 @@
     <section class="tecnologias" id="tecnologias">
         <div id="fade" class="hide"></div>
         <h2>Tecnologias</h2>
+        <p>Algumas tecnologias que eu tenho conhecimento</p>
         <ul class="itens">
             <li class="item">
                 <h3>HTML</h3>
@@ -116,7 +122,37 @@
             <i class="bi bi-arrow-right-circle-fill" id="voltar"></i>
         </div>
     </section>
-    <section class="contato" id="#contato"></section>
+    <section id="contato" class="contato">
+        <h2>Contato</h2>
+        <p>Envie seu contato para conversar comigo</p>
+        <form action="#" method="get" id="form">
+            <div class="config">
+                <div class="container-nome">
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome">
+                </div>
+                <div class="container-sobrenome">
+                    <label for="sobrenome">Sobrenome:</label>
+                    <input type="text" name="sobrenome" id="sobrenome">
+                </div>
+            </div>
+            <div class="config">
+                <div class="container-email">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="container-celular">
+                    <label for="whatsapp">Celular:</label>
+                    <input type="number" name="celular" id="celular">
+                </div>
+            </div>
+            <textarea name="mensagem" id="mensagem" class="mensagem" rows="10" placeholder="Digite uma mensagem"></textarea>
+            <input type="submit" value="Enviar" class="btn-enviar">
+        </form>
+    </section>
+    <footer class="rodape">
+        <p>&copy; Todos os direitos reservados</p>
+    </footer>
 </body>
 
 </html>

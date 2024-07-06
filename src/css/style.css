@@ -24,6 +24,24 @@ body {
     }
 }
 
+.icon-whatsapp {
+    position: fixed;
+    bottom: 60px;
+    right: 60px;
+    font-size: 30px;
+    color: #fff;
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    padding: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1;
+}
+
 .cabecalho {
     display: flex;
     align-items: center;
@@ -152,6 +170,11 @@ body {
     color: #9c7652;
     text-transform: uppercase;
     font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.tecnologias p {
+    font-size: 22px;
     margin-bottom: 100px;
 }
 
@@ -253,7 +276,8 @@ body {
     pointer-events: none;
 }
 
-#fade,#modal {
+#fade,
+#modal {
     opacity: 1;
     pointer-events: all;
     transition: 0.6s ease-in-out;
@@ -291,7 +315,7 @@ body {
 
 .projetos .imagens .img-projeto {
     width: 700px;
-    max-width: 90%;
+    max-width: 100%;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
@@ -300,7 +324,97 @@ body {
     display: flex;
     gap: 30px;
     font-size: 40px;
+}
+
+.projetos .controle i {
     cursor: pointer;
+}
+
+.contato {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin-bottom: 150px;
+}
+
+.contato h2 {
+    color: #9c7652;
+    text-transform: uppercase;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.contato p {
+    font-size: 22px;
+    margin-bottom: 90px;
+}
+
+form {
+    width: 600px;
+    max-width: 100%;
+}
+
+.config {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.container-nome,
+.container-sobrenome,
+.contato .container-email,
+.container-celular {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.container-email label,
+.container-tel label {
+    font-size: 18px;
+}
+
+form input,
+textarea {
+    outline: none;
+    background-color: #E8F0FE;
+    color: black;
+    padding: 10px 25px;
+    border-radius: 5px;
+}
+
+form .mensagem {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+form .btn-enviar {
+    color: white;
+    background-color: black;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: 0.2s ease-in-out;
+}
+
+form .btn-enviar:hover {
+    background-color: #9c7652;
+}
+
+.rodape {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 50px;
+    width: 100%;
+    background-color: #9c7652;
+    color: white;
+    font-size: 25px;
 }
 
 @media (width < 940px) {
@@ -353,8 +467,27 @@ body {
         height: 200vh;
     }
 
+    .contato {
+        padding: 0 20px;
+    }
+
     .projetos {
         padding: 0 30px;
+    }
+
+    .config {
+        flex-wrap: wrap;
+    }
+
+    .container-nome,
+    .container-sobrenome,
+    .contato .container-email,
+    .container-tel {
+        width: 100%;
+    }
+
+    .icon-whatsapp {
+        right: 10px;
     }
 }
 
