@@ -61,8 +61,8 @@ buttonElement[3].addEventListener('click', () => {
     limparClasse()
 })
 buttonElement[4].addEventListener('click', () => {
-    titleElement.innerHTML = 'GIT'
-    descricaoElement.innerHTML = 'Git ₍ₒᵤ em inglês britânico₎ é um sistema de controle de versões distribuído, usado principalmente no desenvolvimento de software, mas pode ser usado para registrar o histórico de edições de qualquer tipo de arquivo.'
+    titleElement.innerHTML = 'TYPESCRIPT'
+    descricaoElement.innerHTML = 'TypeScript é uma linguagem de programação de código aberto desenvolvida pela Microsoft. É um superconjunto sintático estrito de JavaScript e adiciona tipagem estática opcional à linguagem.'
     limparClasse()
 })
 buttonFechar.addEventListener('click', limparClasse)
@@ -78,7 +78,7 @@ const textArea = document.querySelector('#mensagem')
 
 function validarEmail(email) {
     const validação = new RegExp(
-         /^[a-zA-Z-_]+@[a-zA-Z]+\.+[a-zA-z]/
+         /^[a-zA-Z-_]+@[a-zA-Z]+\.+[a-zA-Z]/
     )
 
     if (validação.test(email)) {

@@ -24,22 +24,50 @@ body {
     }
 }
 
-.icon-whatsapp {
+.container-whatsapp {
+    width: 64px;
+    height: 64px;
     position: fixed;
-    bottom: 60px;
-    right: 60px;
+    bottom: 30px;
+    right: 30px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.icon-whatsapp {
     font-size: 30px;
     color: #fff;
     background-color: black;
-    width: 50px;
-    height: 50px;
-    padding: 30px;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
     z-index: 1;
+}
+
+.container-whatsapp .text-whatsapp {
+    position: absolute;
+    width: 100px;
+    top: -80px;
+    right: 0;
+    background-color: black;
+    color: white;
+    padding: 8px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: normal;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s;
+  
+}
+
+.container-whatsapp:hover .text-whatsapp {
+    opacity: 1;
 }
 
 .cabecalho {
@@ -107,7 +135,7 @@ body {
     height: 100%;
     top: 0;
     left: 0;
-    background-color: #000;
+    background-color:  #000;
     z-index: -1;
 }
 
@@ -161,9 +189,11 @@ body {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     width: 100%;
     height: 100vh;
     position: relative;
+    padding: 0 30px;
 }
 
 .tecnologias h2 {
@@ -222,6 +252,10 @@ body {
 
 .itens .item .icon {
     font-size: 60px;
+}
+
+.itens .item .tecnologia {
+    width: 60px;
 }
 
 .itens .item #modal {
@@ -341,6 +375,7 @@ body {
 
 .contato h2 {
     color: #9c7652;
+    text-align: center;
     text-transform: uppercase;
     font-size: 50px;
     margin-bottom: 30px;
@@ -492,6 +527,12 @@ form .btn-enviar:hover {
 }
 
 @media (width < 450px) {
+    .container-whatsapp {
+        width: 55px;
+        height: 55px;
+        right: 0;
+    }
+
     .tecnologias {
         padding-top: 200px;
         margin-bottom: 100px;
