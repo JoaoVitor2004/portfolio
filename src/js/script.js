@@ -29,44 +29,47 @@ iconVoltar.addEventListener('click', voltarImagem)
 
 
 const buttonElement = document.querySelectorAll('#btn-tec')
-const modal = document.querySelector('#modal')
+const modal = document.querySelectorAll('#modal')
 const fade = document.querySelector('#fade')
-const buttonFechar = document.querySelector('#fechar')
-const titleElement = document.querySelector('#title')
-const descricaoElement = document.querySelector('#descricao')
+const buttonFechar = document.querySelectorAll('#fechar')
 
-function limparClasse() {
+
+
+function limparClasse0() {
     fade.classList.toggle('hide')
-    modal.classList.toggle('hide')
+    modal[0].classList.toggle('hide')
 }
 
-buttonElement[0].addEventListener('click', () => {
-    titleElement.innerHTML = 'HTML'
-    descricaoElement.innerHTML = 'HTML é uma linguagem de marcação utilizada na construção de páginas na Web. Documentos HTML podem ser interpretados por navegadores. A tecnologia é fruto da junção entre os padrões HyTime e SGML. HyTime é um padrão para a representação estruturada de hipermídia e conteúdo baseado em tempo.'
-    limparClasse()
-})
-buttonElement[1].addEventListener('click', () => {
-    titleElement.innerHTML = 'CSS'
-    descricaoElement.innerHTML = 'Cascading Style Sheets é um mecanismo para adicionar estilos a uma página web, aplicado diretamente nas tags HTML ou ficar contido dentro das tags <style>. Também é possível, adicionar estilos adicionando um link para um arquivo CSS que contém os estilos.'
-    limparClasse()
-})
-buttonElement[2].addEventListener('click', () => {
-    titleElement.innerHTML = 'JAVASCRIPT'
-    descricaoElement.innerHTML = 'JavaScript é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma. Juntamente com HTML e CSS, o JavaScript é uma das três principais tecnologias da World Wide Web.'
-    limparClasse()
-})
-buttonElement[3].addEventListener('click', () => {
-    titleElement.innerHTML = 'SASS'
-    descricaoElement.innerHTML = 'Sass é uma linguagem de folhas de estilo concebida inicialmente por Hampton Catlin e desenvolvida por Natalie Weizenbaum. Depois de suas versões iniciais, Weizenbaum e Chris Eppstein continuaram a estender Sass com SassScript, uma simples linguagem de script usada em arquivos Sass.'
-    limparClasse()
-})
-buttonElement[4].addEventListener('click', () => {
-    titleElement.innerHTML = 'TYPESCRIPT'
-    descricaoElement.innerHTML = 'TypeScript é uma linguagem de programação de código aberto desenvolvida pela Microsoft. É um superconjunto sintático estrito de JavaScript e adiciona tipagem estática opcional à linguagem.'
-    limparClasse()
-})
-buttonFechar.addEventListener('click', limparClasse)
+function limparClasse1() {
+    fade.classList.toggle('hide')
+    modal[1].classList.toggle('hide')
+}
 
+function limparClasse2() {
+    fade.classList.toggle('hide')
+    modal[2].classList.toggle('hide')
+}
+
+function limparClasse3() {
+    fade.classList.toggle('hide')
+    modal[3].classList.toggle('hide')
+}
+
+function limparClasse4() {
+    fade.classList.toggle('hide')
+    modal[4].classList.toggle('hide')
+}
+
+buttonElement[0].addEventListener('click', limparClasse0)
+buttonElement[1].addEventListener('click', limparClasse1)
+buttonElement[2].addEventListener('click', limparClasse2)
+buttonElement[3].addEventListener('click', limparClasse3)
+buttonElement[4].addEventListener('click', limparClasse4)
+buttonFechar[0].addEventListener('click', limparClasse0)
+buttonFechar[1].addEventListener('click', limparClasse1)
+buttonFechar[2].addEventListener('click', limparClasse2)
+buttonFechar[3].addEventListener('click', limparClasse3)
+buttonFechar[4].addEventListener('click', limparClasse4)
 
 
 const form = document.querySelector('#form')

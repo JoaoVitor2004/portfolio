@@ -24,6 +24,17 @@ body {
     }
 }
 
+@keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+
 .container-whatsapp {
     width: 64px;
     height: 64px;
@@ -127,6 +138,7 @@ body {
     position: relative;
     color: #fff;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
 .hero .background {

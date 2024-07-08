@@ -17,11 +17,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"
         integrity="sha512-u3fPA7V8qQmhBPNT5quvaXVa1mnnLSXUep5PS1qo5NRzHwG19aHmNJnj1Q8hpA/nBWZtZD4r4AX6YOt5ynLN2g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
     <div class="container-whatsapp">
-        <a target="_blank" href="https://api.whatsapp.com/send?phone=+5511933677647&text=Quero entrar em contato" class="icon-whatsapp">
+        <a target="_blank" href="https://api.whatsapp.com/send?phone=+5511933677647&text=Quero entrar em contato"
+            class="icon-whatsapp">
             <i class="bi bi-whatsapp"></i>
         </a>
         <span class="text-whatsapp">Entrar em contato</span>
@@ -73,7 +75,7 @@
             </div>
         </div>
     </section>
-    <section class="tecnologias" id="tecnologias">
+    <section data-aos="fade-up"class="tecnologias" id="tecnologias">
         <div id="fade" class="hide"></div>
         <h2>Tecnologias</h2>
         <p>Algumas tecnologias que eu tenho conhecimento</p>
@@ -83,8 +85,11 @@
                 <i class="fa-brands fa-html5 icon"></i>
                 <button class="btn-tec" id="btn-tec">Clique aqui</button>
                 <div id="modal" class="hide">
-                    <h2 id="title"></h2>
-                    <p id="descricao"></p>
+                    <h2 id="title">HTML</h2>
+                    <p id="descricao">HTML é uma linguagem de marcação utilizada na construção de páginas na Web.
+                        Documentos HTML podem ser interpretados por navegadores. A tecnologia é fruto da junção entre os
+                        padrões HyTime e SGML. HyTime é um padrão para a representação estruturada de hipermídia e
+                        conteúdo baseado em tempo.</p>
                     <div>
                         <button class="fechar" id="fechar">Fechar</button>
                         <a target="_blank" href="https://developer.mozilla.org/pt-BR/"><button class="direcionar"
@@ -96,25 +101,71 @@
                 <h3 id="title">CSS</h3>
                 <i class="fa-brands fa-css3-alt icon"></i>
                 <button class="btn-tec" id="btn-tec">Clique aqui</button>
+                <div id="modal" class="hide">
+                    <h2 id="title">CSS</h2>
+                    <p id="descricao">Cascading Style Sheets é um mecanismo para adicionar estilos a uma página web,
+                        aplicado diretamente nas tags HTML ou ficar contido dentro das tags. Também é possível,
+                        adicionar estilos adicionando um link para um arquivo CSS que contém os estilos.</p>
+                    <div>
+                        <button class="fechar" id="fechar">Fechar</button>
+                        <a target="_blank" href="https://developer.mozilla.org/pt-BR/"><button class="direcionar"
+                                id="direcionar">Ir para o mdn</button></a>
+                    </div>
+                </div>
             </li>
             <li class="item">
                 <h3 id="title">JAVASCRIPT</h3>
                 <i class="fa-brands fa-js icon"></i>
                 <button class="btn-tec" id="btn-tec">Clique aqui</button>
+                <div id="modal" class="hide">
+                    <h2 id="title">JAVASCRIPT</h2>
+                    <p id="descricao">JavaScript é uma linguagem de programação interpretada estruturada, de script em
+                        alto nível com tipagem dinâmica fraca e multiparadigma. Juntamente com HTML e CSS, o JavaScript
+                        é uma das três principais tecnologias da World Wide Web.</p>
+                    <div>
+                        <button class="fechar" id="fechar">Fechar</button>
+                        <a target="_blank" href="https://developer.mozilla.org/pt-BR/"><button class="direcionar"
+                                id="direcionar">Ir para o mdn</button></a>
+                    </div>
+                </div>
             </li>
             <li class="item">
                 <h3 id="title">SASS</h3>
                 <i class="fa-brands fa-sass icon"></i>
                 <button class="btn-tec" id="btn-tec">Clique aqui</button>
+                <div id="modal" class="hide">
+                    <h2 id="title">SASS</h2>
+                    <p id="descricao">Sass é uma linguagem de folhas de estilo concebida inicialmente por Hampton Catlin
+                        e desenvolvida por Natalie Weizenbaum. Depois de suas versões iniciais, Weizenbaum e Chris
+                        Eppstein continuaram a estender Sass com SassScript, uma simples linguagem de script usada em
+                        arquivos Sass.</p>
+                    <div>
+                        <button class="fechar" id="fechar">Fechar</button>
+                        <a target="_blank" href="https://developer.mozilla.org/pt-BR/"><button class="direcionar"
+                                id="direcionar">Ir para o mdn</button></a>
+                    </div>
+                </div>
             </li>
             <li class="item">
                 <h3 id="title">TYPESCRIPT</h3>
-                <img class="tecnologia" src="https://img.icons8.com/?size=100&id=cHBUT9SmrD2V&format=png&color=000000" alt="logo da tecnologia">
+                <img class="tecnologia" src="https://img.icons8.com/?size=100&id=cHBUT9SmrD2V&format=png&color=000000"
+                    alt="logo da tecnologia">
                 <button class="btn-tec" id="btn-tec">Clique aqui</button>
+                <div id="modal" class="hide">
+                    <h2 id="title">TYPESCRIPT</h2>
+                    <p id="descricao">TypeScript é uma linguagem de programação de código aberto desenvolvida pela
+                        Microsoft. É um superconjunto sintático estrito de JavaScript e adiciona tipagem estática
+                        opcional à linguagem..</p>
+                    <div>
+                        <button class="fechar" id="fechar">Fechar</button>
+                        <a target="_blank" href="https://developer.mozilla.org/pt-BR/"><button class="direcionar"
+                                id="direcionar">Ir para o mdn</button></a>
+                    </div>
+                </div>
             </li>
         </ul>
     </section>
-    <section class="projetos" id="projetos">
+    <section data-aos="fade-up" class="projetos" id="projetos">
         <h2>projetos</h2>
         <p>Clique na seta da direita para avançar e seta da esquerda para voltar</p>
         <div class="imagens">
@@ -125,7 +176,7 @@
             <i class="bi bi-arrow-right-circle-fill" id="voltar"></i>
         </div>
     </section>
-    <section id="contato" class="contato">
+    <section data-aos="fade-up" id="contato" class="contato">
         <h2>Contato</h2>
         <p>Envie seu contato para conversar comigo</p>
         <form action="https://formspree.io/f/xeojqvwo" method="post" id="form">
@@ -145,17 +196,23 @@
                     <input type="email" name="email" id="email">
                 </div>
                 <div class="container-celular">
-                    <label for="whatsapp">Celular:</label>
+                    <label for="celular">Celular:</label>
                     <input type="number" name="celular" id="celular">
                 </div>
             </div>
-            <textarea name="mensagem" id="mensagem" class="mensagem" rows="10" placeholder="Digite uma mensagem"></textarea>
+            <textarea name="mensagem" id="mensagem" class="mensagem" rows="10"
+                placeholder="Digite uma mensagem"></textarea>
             <input type="submit" value="Enviar" class="btn-enviar">
         </form>
     </section>
     <footer class="rodape">
         <p>&copy; Todos os direitos reservados</p>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
