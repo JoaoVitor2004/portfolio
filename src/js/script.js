@@ -28,48 +28,34 @@ iconVoltar.addEventListener('click', voltarImagem)
 
 
 
+
+
+
+
 const buttonElement = document.querySelectorAll('#btn-tec')
 const modal = document.querySelectorAll('#modal')
 const fade = document.querySelector('#fade')
 const buttonFechar = document.querySelectorAll('#fechar')
 
-
-
-function limparClasse0() {
+function limparClasse(indice) {
     fade.classList.toggle('hide')
-    modal[0].classList.toggle('hide')
+    modal[indice].classList.toggle('hide')
 }
 
-function limparClasse1() {
-    fade.classList.toggle('hide')
-    modal[1].classList.toggle('hide')
-}
+buttonElement[0].addEventListener('click', () => limparClasse(0))
+buttonElement[1].addEventListener('click', () => limparClasse(1))
+buttonElement[2].addEventListener('click', () => limparClasse(2))
+buttonElement[3].addEventListener('click', () => limparClasse(3))
+buttonElement[4].addEventListener('click', () => limparClasse(4))
 
-function limparClasse2() {
-    fade.classList.toggle('hide')
-    modal[2].classList.toggle('hide')
-}
+buttonFechar[0].addEventListener('click', () => limparClasse(0))
+buttonFechar[1].addEventListener('click', () => limparClasse(1))
+buttonFechar[2].addEventListener('click', () => limparClasse(2))
+buttonFechar[3].addEventListener('click', () => limparClasse(3))
+buttonFechar[4].addEventListener('click', () => limparClasse(4))
 
-function limparClasse3() {
-    fade.classList.toggle('hide')
-    modal[3].classList.toggle('hide')
-}
 
-function limparClasse4() {
-    fade.classList.toggle('hide')
-    modal[4].classList.toggle('hide')
-}
 
-buttonElement[0].addEventListener('click', limparClasse0)
-buttonElement[1].addEventListener('click', limparClasse1)
-buttonElement[2].addEventListener('click', limparClasse2)
-buttonElement[3].addEventListener('click', limparClasse3)
-buttonElement[4].addEventListener('click', limparClasse4)
-buttonFechar[0].addEventListener('click', limparClasse0)
-buttonFechar[1].addEventListener('click', limparClasse1)
-buttonFechar[2].addEventListener('click', limparClasse2)
-buttonFechar[3].addEventListener('click', limparClasse3)
-buttonFechar[4].addEventListener('click', limparClasse4)
 
 
 const form = document.querySelector('#form')

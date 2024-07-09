@@ -175,6 +175,8 @@ body {
 }
 
 .descricao p {
+    font-size: 17px;
+    font-weight: normal;
     text-align: justify;
     line-height: 30px;
     max-width: 400px;
@@ -208,6 +210,7 @@ body {
     text-align: center;
     width: 100%;
     height: 100vh;
+    max-height: 100%;
     position: relative;
     padding: 0 30px;
 }
@@ -398,6 +401,7 @@ body {
 }
 
 .contato p {
+    text-align: center;
     font-size: 22px;
     margin-bottom: 90px;
 }
@@ -466,91 +470,4 @@ form .btn-enviar:hover {
     background-color: #9c7652;
     color: white;
     font-size: 25px;
-}
-
-@media (width < 940px) {
-    .cabecalho {
-        padding: 20px 30px;
-    }
-
-    .cabecalho .logo {
-        font-size: 22px;
-    }
-
-    .navegacao ul li a {
-        display: block;
-        color: white;
-        margin-bottom: 10px;
-    }
-
-    .navegacao ul .curriculo {
-        color: black;
-        background-color: white;
-    }
-
-    .hero .background {
-        display: none;
-    }
-
-    .hero {
-        color: #000;
-        align-items: center;
-        height: 100vh;
-        flex-direction: column-reverse;
-    }
-
-    .hero img {
-        width: 200px;
-        animation: none;
-    }
-
-    .redes-sociais a.icon {
-        color: #000;
-    }
-}
-
-@media (width < 700px) {
-    .hero {
-        padding: 80px 30px 0 30px;
-    }
-
-    .tecnologias {
-        height: 200vh;
-    }
-
-    .contato {
-        padding: 0 20px;
-    }
-
-    .projetos {
-        padding: 0 30px;
-    }
-
-    .config {
-        flex-wrap: wrap;
-    }
-
-    .container-nome,
-    .container-sobrenome,
-    .contato .container-email,
-    .container-tel {
-        width: 100%;
-    }
-
-    .icon-whatsapp {
-        right: 10px;
-    }
-}
-
-@media (width < 450px) {
-    .container-whatsapp {
-        width: 55px;
-        height: 55px;
-        right: 0;
-    }
-
-    .tecnologias {
-        padding-top: 200px;
-        margin-bottom: 100px;
-    }
 }
