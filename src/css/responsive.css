@@ -96,6 +96,12 @@
 
     .projetos {
         padding: 0 30px;
+        height: 180vh;
+    }
+
+    .projetos .imagens {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
     }
 
     .config {

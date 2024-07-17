@@ -1,36 +1,3 @@
-const imagemProjeto = document.getElementById('img-projeto')
-const iconAvancar = document.getElementById('avancar')
-const iconVoltar = document.getElementById('voltar')
-
-let imagemAtual = 1
-let quantidade = 6
-
-function avancarImagem() {
-    if (imagemAtual === quantidade) {
-        imagemAtual = 1
-    } else {
-        imagemAtual += 1
-    }
-    imagemProjeto.src = `src/images/${imagemAtual}.JPG`
-}
-
-function voltarImagem() {
-    if (imagemAtual === 1) {
-        imagemAtual = quantidade
-    } else {
-        imagemAtual -= 1
-    }
-    imagemProjeto.src = `src/images/${imagemAtual}.JPG`
-}
-
-iconAvancar.addEventListener('click', avancarImagem)
-iconVoltar.addEventListener('click', voltarImagem)
-
-
-
-
-
-
 
 const buttonElement = document.querySelectorAll('#btn-tec')
 const modal = document.querySelectorAll('#modal')
