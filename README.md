@@ -18,7 +18,7 @@ Precisa ter somente apenas um navegador instalado em sua maquina, acessando apar
 
 ### 👨‍💻 Autores / Colaboradores
 
-- **João Vitor** - Frontend do projeto - [João Vitor](https://linkedin.com/in/joão-vitor-souza)
+- **João Vitor** - Frontend do projeto - [João Vitor](https://www.linkedin.com/in/jo%C3%A3o-vitor-souza-994bb4325)
 
 ### 📃 Licença
 
