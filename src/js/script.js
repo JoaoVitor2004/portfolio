@@ -1,25 +1,24 @@
 
-const buttonElement = document.querySelectorAll('#btn-tec')
-const modal = document.querySelectorAll('#modal')
+const buttonElement = document.querySelectorAll('.btn-tec')
+const modal = document.querySelectorAll('.modal')
 const fade = document.querySelector('#fade')
-const buttonFechar = document.querySelectorAll('#fechar')
-
-function limparClasse(indice) {
-    fade.classList.toggle('hide')
-    modal[indice].classList.toggle('hide')
-}
+const buttonFechar = document.querySelectorAll('.fechar')
 
 buttonElement[0].addEventListener('click', () => limparClasse(0))
 buttonElement[1].addEventListener('click', () => limparClasse(1))
 buttonElement[2].addEventListener('click', () => limparClasse(2))
 buttonElement[3].addEventListener('click', () => limparClasse(3))
 buttonElement[4].addEventListener('click', () => limparClasse(4))
+buttonElement[5].addEventListener('click', () => limparClasse(5))
+buttonElement[6].addEventListener('click', () => limparClasse(6))
 
 buttonFechar[0].addEventListener('click', () => limparClasse(0))
 buttonFechar[1].addEventListener('click', () => limparClasse(1))
 buttonFechar[2].addEventListener('click', () => limparClasse(2))
 buttonFechar[3].addEventListener('click', () => limparClasse(3))
 buttonFechar[4].addEventListener('click', () => limparClasse(4))
+buttonFechar[5].addEventListener('click', () => limparClasse(5))
+buttonFechar[6].addEventListener('click', () => limparClasse(6))
 
 
 

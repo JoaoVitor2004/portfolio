@@ -211,7 +211,7 @@ body {
     width: 100%;
     min-height: 100vh;
     position: relative;
-    padding: 0 30px;
+    padding: 60px 30px;
 }
 
 .tecnologias h2 {
@@ -232,7 +232,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 50px;
-    width: 100%;
+    width: 1200px;
     max-width: 100%;
 }
 
