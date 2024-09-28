@@ -24,6 +24,7 @@ buttonFechar[3].addEventListener('click', () => limparClasse(3))
 buttonFechar[4].addEventListener('click', () => limparClasse(4))
 buttonFechar[5].addEventListener('click', () => limparClasse(5))
 buttonFechar[6].addEventListener('click', () => limparClasse(6))
+buttonFechar[7].addEventListener('click', () => limparClasse(7))
 
 
 
