@@ -61,7 +61,9 @@
         color: #000;
         align-items: center;
         height: 100vh;
-        flex-direction: column-reverse;
+        flex-direction: column;
+        gap: 50px;
+        justify-content: center;
     }
 
     .hero img {

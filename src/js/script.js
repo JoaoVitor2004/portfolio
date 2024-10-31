@@ -9,26 +9,17 @@ function limparClasse(indice) {
     modal[indice].classList.toggle('hide')
 }
 
-buttonElement[0].addEventListener('click', () => limparClasse(0))
-buttonElement[1].addEventListener('click', () => limparClasse(1))
-buttonElement[2].addEventListener('click', () => limparClasse(2))
-buttonElement[3].addEventListener('click', () => limparClasse(3))
-buttonElement[4].addEventListener('click', () => limparClasse(4))
-buttonElement[5].addEventListener('click', () => limparClasse(5))
-buttonElement[6].addEventListener('click', () => limparClasse(6))
+buttonElement.forEach((botao, indice) => {
+    botao.addEventListener("click", () => {
+        limparClasse(indice)
+    })
+})
 
-buttonFechar[0].addEventListener('click', () => limparClasse(0))
-buttonFechar[1].addEventListener('click', () => limparClasse(1))
-buttonFechar[2].addEventListener('click', () => limparClasse(2))
-buttonFechar[3].addEventListener('click', () => limparClasse(3))
-buttonFechar[4].addEventListener('click', () => limparClasse(4))
-buttonFechar[5].addEventListener('click', () => limparClasse(5))
-buttonFechar[6].addEventListener('click', () => limparClasse(6))
-buttonFechar[7].addEventListener('click', () => limparClasse(7))
-
-
-
-
+buttonFechar.forEach((botao, indice) => {
+    botao.addEventListener("click", () => {
+        limparClasse(indice)
+    })
+})
 
 const form = document.querySelector('#form')
 const inputNome = document.querySelector('#nome')

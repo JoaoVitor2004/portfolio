@@ -135,10 +135,9 @@ body {
     display: flex;
     flex-flow: row-reverse;
     justify-content: space-around;
-    align-items: flex-start;
+    align-items: center;
     height: 85vh;
     text-align: center;
-    padding-top: 80px;
     position: relative;
     color: #fff;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -250,11 +249,17 @@ body {
     box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
     width: 200px;
     height: 220px;
-    padding: 45px 0;
+    padding: 55px 0;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.tecnologias .itens .item .icone {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
 }
 
 .tecnologias .itens .item .btn-tec {
