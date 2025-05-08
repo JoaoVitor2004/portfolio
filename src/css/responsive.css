@@ -20,6 +20,11 @@
         margin-bottom: 10px;
     }
 
+    .navegacao ul li a:hover {
+        background-color: #fff;
+        color: #000;
+    }
+
     .navegacao ul .curriculo {
         color: black;
         background-color: white;
@@ -64,6 +69,8 @@
         flex-direction: column;
         gap: 50px;
         justify-content: center;
+        background: none;
+        text-align: center;
     }
 
     .hero img {

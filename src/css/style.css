@@ -1,14 +1,7 @@
 @import "./reset.css";
 @import "./menu-mobile.css";
 @import "./responsive.css";
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    font-family: 'Oswald', Verdana, Geneva, Tahoma, sans-serif;
-}
+@import "./btn-contact.css";
 
 @keyframes flutuar {
     0% {
@@ -26,14 +19,15 @@ body {
 
 @keyframes scale-up-center {
     0% {
-      -webkit-transform: scale(0.5);
-              transform: scale(0.5);
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
     }
+
     100% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
+        -webkit-transform: scale(1);
+        transform: scale(1);
     }
-  }
+}
 
 .container-whatsapp {
     width: 64px;
@@ -74,7 +68,7 @@ body {
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.4s;
-  
+
 }
 
 .container-whatsapp:hover .text-whatsapp {
@@ -108,15 +102,17 @@ body {
 }
 
 .navegacao ul li a {
+    font-size: 24px;
     color: black;
-    padding: 10px 30px;
+    padding: 10px 20px;
+    border-radius: 50%;
     transition: 0.2s ease-in-out;
 }
 
 .navegacao ul li a:hover {
     background-color: black;
-    border-radius: 5px;
     color: #fff;
+    transition: 0.2s ease-in-out;
 }
 
 .navegacao ul .curriculo {
@@ -136,32 +132,22 @@ body {
     flex-flow: row-reverse;
     justify-content: space-around;
     align-items: center;
+    width: 100%;
     height: 85vh;
-    text-align: center;
     position: relative;
-    color: #fff;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    color: #000;
     animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-}
-
-.hero .background {
-    position: absolute;
-    width: 50%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color:  #000;
-    z-index: -1;
+    background: url("../images/wave-haikei.svg") no-repeat center center;
+    background-size: cover;
 }
 
 .hero img {
-    animation: flutuar 4s linear alternate infinite;
-    width: 400px;
+    width: 450px;
     max-width: 100%;
 }
 
 .descricao h1 {
-    font-size: 60px;
+    font-size: 70px;
     text-transform: uppercase;
     margin-bottom: 20px;
 }
@@ -174,24 +160,21 @@ body {
 }
 
 .descricao p {
-    font-size: 17px;
+    font-size: 18px;
     font-weight: normal;
     text-align: justify;
     line-height: 30px;
-    max-width: 400px;
-    margin-bottom: 20px;
+    max-width: 450px;
+    margin-bottom: 30px;
 }
 
-.descricao .redes-sociais {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    font-size: 25px;
+.descricao .btn-contact:hover {
+    background-color: #000;
+    color: #fff;
 }
 
 .redes-sociais a.icon {
-    color: #fff;
+    color: #000;
     cursor: pointer;
     transition: 0.2s ease-in-out;
 }
@@ -342,6 +325,7 @@ body {
     opacity: 1;
     pointer-events: all;
     transition: 0.6s ease-in-out;
+    z-index: 9;
 }
 
 .projetos {
