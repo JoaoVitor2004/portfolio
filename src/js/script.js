@@ -1,26 +1,7 @@
-
-const buttonElement = document.querySelectorAll('#btn-tec')
-const modal = document.querySelectorAll('#modal')
+const btnOpen = document.querySelectorAll('.btn-tec')
+const btnClose = document.querySelectorAll(".fechar")
+const modal = document.querySelectorAll('.modal')
 const fade = document.querySelector('#fade')
-const buttonFechar = document.querySelectorAll('#fechar')
-
-function limparClasse(indice) {
-    fade.classList.toggle('hide')
-    modal[indice].classList.toggle('hide')
-}
-
-buttonElement.forEach((botao, indice) => {
-    botao.addEventListener("click", () => {
-        limparClasse(indice)
-    })
-})
-
-buttonFechar.forEach((botao, indice) => {
-    botao.addEventListener("click", () => {
-        limparClasse(indice)
-    })
-})
-
 const form = document.querySelector('#form')
 const inputNome = document.querySelector('#nome')
 const inputSobrenome = document.querySelector('#sobrenome')
@@ -28,16 +9,53 @@ const inputEmail = document.querySelector('#email')
 const inputTelefone = document.querySelector('#celular')
 const textArea = document.querySelector('#mensagem')
 
+function limparClasse(indice) {
+    fade.classList.toggle('hide')
+    modal[indice].classList.toggle('hide')
+}
+
+btnOpen.forEach((botao, indice) => {
+    botao.addEventListener("click", () => {
+        limparClasse(indice)
+    })
+})
+
+btnClose.forEach((botao, indice) => {
+    botao.addEventListener("click", () => {
+        limparClasse(indice)
+    })
+})
+
 function validarEmail(email) {
     const validação = new RegExp(
-         /^[a-zA-Z-_]+@[a-zA-Z]+\.+[a-zA-Z]/
+        /^[a-zA-Z-_]+@[a-zA-Z]+\.+[a-zA-Z]/
     )
 
     if (validação.test(email)) {
         return true
     }
-    
+
     return false
+}
+
+function showErrorMessage() {
+    Toastify({
+        text: "This is a toast",
+        duration: 3000,
+        close: true,
+        gravity: "top",
+        position: "right",
+        stopOnFocus: true,
+        style: {
+            display: "flex",
+            justifyContent: "space-between",
+            width: "250px",
+            maxWidth: "90%",
+            background: "#000",
+            color: "#fff"
+        },
+        onClick: function () { } // Callback after click
+    }).showToast();
 }
 
 form.addEventListener('submit', (event) => {
@@ -45,30 +63,44 @@ form.addEventListener('submit', (event) => {
     event.preventDefault()
 
     if (inputNome.value === '' || inputNome.value.length < 4) {
-        alert('Digite um nome valido')
+        showErrorMessage()
         return
     }
 
     if (inputSobrenome.value === '' || inputSobrenome.value.length < 4) {
-        alert('Digite um sobrenome valido')
+        showErrorMessage()
         return
     }
 
     if (!validarEmail(inputEmail.value)) {
-        alert('Digite um email valido')
+        showErrorMessage()
         return
     }
 
     if (inputTelefone.value === '' || inputTelefone.value.length < 11) {
-        alert('Digite um telefone com apenas números')
+        showErrorMessage()
         return
     }
 
     if (textArea.value === '') {
-        alert('Digite uma mensagem com apenas letras')
+        showErrorMessage()
         return
     }
 
     alert('Dados enviados')
     form.submit()
 })
+
+const swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});

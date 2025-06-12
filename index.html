@@ -19,15 +19,41 @@
         integrity="sha512-u3fPA7V8qQmhBPNT5quvaXVa1mnnLSXUep5PS1qo5NRzHwG19aHmNJnj1Q8hpA/nBWZtZD4r4AX6YOt5ynLN2g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 </head>
 
 <body>
+
     <div class="container-whatsapp">
-        <a target="_blank" href="https://api.whatsapp.com/send?phone=+5511933677647&text=Quero entrar em contato"
-            class="icon-whatsapp">
-            <i class="bi bi-whatsapp"></i>
-        </a>
-        <span class="text-whatsapp">Entrar em contato</span>
+        <!-- From Uiverse.io by Creatlydev -->
+        <button class="button">
+            <a href="https://api.whatsapp.com/send?phone=+5511933677647&text=Quero entrar em contato" target="_blank">
+                <p class="button__text">
+                    <span style="--index: 0;">E</span>
+                    <span style="--index: 1;">N</span>
+                    <span style="--index: 2;">T</span>
+                    <span style="--index: 3;">R</span>
+                    <span style="--index: 4;">A</span>
+                    <span style="--index: 5;">R</span>
+                    <span style="--index: 6;"> </span>
+                    <span style="--index: 7;">E</span>
+                    <span style="--index: 8;">M</span>
+                    <span style="--index: 9;"> </span>
+                    <span style="--index: 10;">C</span>
+                    <span style="--index: 11;">O</span>
+                    <span style="--index: 12;">N</span>
+                    <span style="--index: 13;">T</span>
+                    <span style="--index: 14;">A</span>
+                    <span style="--index: 15;">T</span>
+                    <span style="--index: 16;">O</span>
+                </p>
+
+                <div class="button__circle">
+                    <i class="bi bi-whatsapp"></i>
+                </div>
+            </a>
+        </button>
     </div>
 
     </a>
@@ -64,14 +90,12 @@
             <h1>João Vitor</h1>
             <h2>Desenvolvedor web</h2>
             <p>Olá meu nome é João Vitor tenho 20 anos sou desenvolvedor web com foco em tecnologias para desenvolver
-                websites, tenho habilidades em trabalhar em equipe me considero ágil e adaptável a qualquer tipo de mudança,
+                websites, tenho habilidades em trabalhar em equipe me considero ágil e adaptável a qualquer tipo de
+                mudança,
                 precisando elevar o seu site a outro nível eu estou a disposição</p>
-            <button class="learn-more">
+            <button class="btn-contact">
                 <a href="https://wa.me/11933677647?text=Quero entrar em contato" target="_blank">
-                    <span class="circle" aria-hidden="true">
-                        <span class="icon arrow"></span>
-                    </span>
-                    <span class="button-text">Contato</span>
+                    <span class="btn-text">Contato</span>
                 </a>
             </button>
         </div>
@@ -84,7 +108,7 @@
             <li class="item">
                 <h3>HTML</h3>
                 <i class="fa-brands fa-html5 icon"></i>
-                <button class="btn-tec" id="btn-tec">Mais detalhes</button>
+                <button class="btn-tec">Mais detalhes</button>
                 <div id="modal" class="modal hide">
                     <h2 id="title">HTML</h2>
                     <p id="descricao">HTML é uma linguagem de marcação utilizada na construção de páginas na Web.
@@ -92,48 +116,48 @@
                         padrões HyTime e SGML. HyTime é um padrão para a representação estruturada de hipermídia e
                         conteúdo baseado em tempo.</p>
                     <div>
-                        <button class="fechar" id="fechar">Fechar</button>
+                        <button class="fechar">Fechar</button>
                     </div>
                 </div>
             </li>
             <li class="item">
                 <h3 id="title">CSS</h3>
                 <i class="fa-brands fa-css3-alt icon"></i>
-                <button class="btn-tec" id="btn-tec">Mais detalhes</button>
+                <button class="btn-tec">Mais detalhes</button>
                 <div id="modal" class="hide modal">
                     <h2 id="title">CSS</h2>
                     <p id="descricao">Cascading Style Sheets é um mecanismo para adicionar estilos a uma página web,
                         aplicado diretamente nas tags HTML ou ficar contido dentro das tags. Também é possível,
                         adicionar estilos adicionando um link para um arquivo CSS que contém os estilos.</p>
                     <div>
-                        <button class="fechar" id="fechar">Fechar</button>
+                        <button class="fechar">Fechar</button>
                     </div>
                 </div>
             </li>
             <li class="item">
                 <h3 id="title">JAVASCRIPT</h3>
                 <i class="fa-brands fa-js icon"></i>
-                <button class="btn-tec" id="btn-tec">Mais detalhes</button>
+                <button class="btn-tec">Mais detalhes</button>
                 <div id="modal" class="hide modal">
                     <h2 id="title">JAVASCRIPT</h2>
                     <p id="descricao">JavaScript é uma linguagem de programação interpretada estruturada, de script em
                         alto nível com tipagem dinâmica fraca e multiparadigma. Juntamente com HTML e CSS, o JavaScript
                         é uma das três principais tecnologias da World Wide Web.</p>
                     <div>
-                        <button class="fechar" id="fechar">Fechar</button>
+                        <button class="fechar">Fechar</button>
                     </div>
                 </div>
             </li>
             <li class="item">
                 <h3 id="title">REACT</h3>
                 <i class="fa-brands fa-react icon"></i>
-                <button class="btn-tec" id="btn-tec">Mais detalhes</button>
+                <button class="btn-tec">Mais detalhes</button>
                 <div id="modal" class="hide modal">
                     <h2 id="title">REACT</h2>
                     <p id="descricao">O React é uma biblioteca front-end JavaScript de código aberto com foco em criar
                         interfaces de usuário em páginas web.</p>
                     <div>
-                        <button class="fechar" id="fechar">Fechar</button>
+                        <button class="fechar">Fechar</button>
                     </div>
                 </div>
             </li>
@@ -141,35 +165,35 @@
                 <h3 id="title">TYPESCRIPT</h3>
                 <img class="tecnologia" src="https://img.icons8.com/?size=100&id=cHBUT9SmrD2V&format=png&color=000000"
                     alt="logo da tecnologia">
-                <button class="btn-tec" id="btn-tec">Mais detalhes</button>
+                <button class="btn-tec">Mais detalhes</button>
                 <div id="modal" class="hide modal">
                     <h2 id="title">TYPESCRIPT</h2>
                     <p id="descricao">TypeScript é uma linguagem de programação de código aberto desenvolvida pela
                         Microsoft. É um superconjunto sintático estrito de JavaScript e adiciona tipagem estática
                         opcional à linguagem.</p>
                     <div>
-                        <button class="fechar" id="fechar">Fechar</button>
+                        <button class="fechar">Fechar</button>
                     </div>
                 </div>
             </li>
             <li class="item">
                 <h3 id="title">NEXT JS</h3>
                 <img class="logo-tecnologia" src="./src/images/logo.png" alt="logo do Next JS">
-                <button class="btn-tec" id="btn-tec">Mais detalhes</button>
+                <button class="btn-tec">Mais detalhes</button>
                 <div id="modal" class="hide modal">
                     <h2 id="title">NEXT JS</h2>
                     <p id="descricao">Next.js é uma estrutura da web de desenvolvimento front-end React de código aberto
                         criada por Vercel que permite funcionalidades como renderização do lado do servidor e geração de
                         sites estáticos para aplicativos da web baseados em React.</p>
                     <div>
-                        <button class="fechar" id="fechar">Fechar</button>
+                        <button class="fechar">Fechar</button>
                     </div>
                 </div>
             </li>
             <li class="item">
                 <h3 id="title">BOOTSTRAP</h3>
                 <i class="bi bi-bootstrap-fill icon"></i>
-                <button class="btn-tec" id="btn-tec">Mais detalhes</button>
+                <button class="btn-tec">Mais detalhes</button>
                 <div id="modal" class="hide modal">
                     <h2 id="title">BOOTSTRAP</h2>
                     <p id="descricao">Bootstrap é um framework web com código-fonte aberto para desenvolvimento de
@@ -177,14 +201,14 @@
                         baseado em modelos de design para a tipografia, melhorando a experiência do usuário em um site
                         amigável e responsivo.>
                     <div>
-                        <button class="fechar" id="fechar">Fechar</button>
+                        <button class="fechar">Fechar</button>
                     </div>
                 </div>
             </li>
             <li class="item">
                 <h3 id="title">SASS</h3>
                 <i class="fa-brands fa-sass icon"></i>
-                <button class="btn-tec" id="btn-tec">Mais detalhes</button>
+                <button class="btn-tec">Mais detalhes</button>
                 <div id="modal" class="hide modal">
                     <h2 id="title">SASS</h2>
                     <p id="descricao">Sass é uma linguagem de folhas de estilo concebida inicialmente por Hampton Catlin
@@ -192,21 +216,21 @@
                         Eppstein continuaram a estender Sass com SassScript, uma simples linguagem de script usada em
                         arquivos Sass.</p>
                     <div>
-                        <button class="fechar" id="fechar">Fechar</button>
+                        <button class="fechar">Fechar</button>
                     </div>
                 </div>
             </li>
             <li class="item">
                 <h3 id="title">TAILWINDCSS</h3>
                 <img class="icone" src="./src/images/icon-tailwind.png" alt="icone do tailwindCSS">
-                <button class="btn-tec" id="btn-tec">Mais detalhes</button>
+                <button class="btn-tec">Mais detalhes</button>
                 <div id="modal" class="hide modal">
                     <h2 id="title">TAILWINDCSS</h2>
                     <p id="descricao">Tailwind CSS é uma estrutura CSS de código aberto. Ao contrário de outros
                         frameworks, como o Bootstrap, ele não fornece uma série de classes predefinidas para elementos
                         como botões ou tabelas.</p>
                     <div>
-                        <button class="fechar" id="fechar">Fechar</button>
+                        <button class="fechar">Fechar</button>
                     </div>
                 </div>
             </li>
@@ -215,43 +239,77 @@
     <section data-aos="fade-up" class="projetos" id="projetos">
         <h2>projetos</h2>
         <p>Clique ou aperte em cima do projeto para ser redirecionado</p>
-        <div class="imagens">
-            <a href="https://JoaoVitor2004.github.io/projeto-mario" target="_blank" class="container-imagem">
-                <img class="img-projeto" id="img-projeto" src="./src/images/1.JPG" alt="imagem do projeto">
-                <div class="background">
-                    <h2>Ir para o site</h2>
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper images">
+                <div class="swiper-slide">
+                    <a href="https://JoaoVitor2004.github.io/projeto-mario" target="_blank" class="container-imagem">
+                        <div class="projeto">
+                            <img class="img-projeto" id="img-projeto" src="./src/images/1.JPG" alt="imagem do projeto">
+                            <div class="background">
+                                <h2>Ir para o site</h2>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-            </a>
-            <a href="https://JoaoVitor2004.github.io/gerador-de-senha" target="_blank" class="container-imagem">
-                <img class="img-projeto" src="src/images/2.JPG" alt="segundo projeto">
-                <div class="background">
-                    <h2>Ir para o site</h2>
+                <div class="swiper-slide">
+                    <a href="https://JoaoVitor2004.github.io/gerador-de-senha" target="_blank" class="container-imagem">
+                        <div class="projeto">
+                            <img class="img-projeto" id="img-projeto" src="./src/images/2.JPG" alt="imagem do projeto">
+                            <div class="background">
+                                <h2>Ir para o site</h2>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-            </a>
-            <a href="https://JoaoVitor2004.github.io/pagina-de-contato" target="_blank" class="container-imagem">
-                <img class="img-projeto" src="src/images/3.JPG" alt="Terceiro projeto">
-                <div class="background">
-                    <h2>Ir para o site</h2>
+                <div class="swiper-slide">
+                    <a href="https://JoaoVitor2004.github.io/pagina-de-contato" target="_blank"
+                        class="container-imagem">
+                        <div class="projeto">
+                            <img class="img-projeto" id="img-projeto" src="./src/images/3.JPG" alt="imagem do projeto">
+                            <div class="background">
+                                <h2>Ir para o site</h2>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-            </a>
-            <a href="https://JoaoVitor2004.github.io/reprodutor-de-musica" target="_blank" class="container-imagem">
-                <img class="img-projeto" src="src/images/4.JPG" alt="Quarto projeto">
-                <div class="background">
-                    <h2>Ir para o site</h2>
+                <div class="swiper-slide">
+                    <a href="https://JoaoVitor2004.github.io/reprodutor-de-musica" target="_blank"
+                        class="container-imagem">
+                        <div class="projeto">
+                            <img class="img-projeto" id="img-projeto" src="./src/images/4.JPG" alt="imagem do projeto">
+                            <div class="background">
+                                <h2>Ir para o site</h2>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-            </a>
-            <a href="https://JoaoVitor2004.github.io/calculadora-de-idade" target="_blank" class="container-imagem">
-                <img class="img-projeto" id="img-projeto" src="./src/images/5.JPG" alt="imagem do projeto">
-                <div class="background">
-                    <h2>Ir para o site</h2>
+                <div class="swiper-slide">
+                    <a href="https://JoaoVitor2004.github.io/calculadora-de-idade" target="_blank"
+                        class="container-imagem">
+                        <div class="projeto">
+                            <img class="img-projeto" id="img-projeto" src="./src/images/5.JPG" alt="imagem do projeto">
+                            <div class="background">
+                                <h2>Ir para o site</h2>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-            </a>
-            <a href="https://joaoVitor2004.github.io/pagina-iphone-13-pro" target="_blank" class="container-imagem">
-                <img class="img-projeto" id="img-projeto" src="./src/images/6.JPG" alt="imagem do projeto">
-                <div class="background">
-                    <h2>Ir para o site</h2>
+                <div class="swiper-slide">
+                    <a href="https://joaoVitor2004.github.io/pagina-iphone-13-pro" target="_blank"
+                        class="container-imagem">
+                        <div class="projeto">
+                            <img class="img-projeto" id="img-projeto" src="./src/images/6.JPG" alt="imagem do projeto">
+                            <div class="background">
+                                <h2>Ir para o site</h2>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-            </a>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
         </div>
     </section>
     <section data-aos="fade-up" id="contato" class="contato">
@@ -287,6 +345,8 @@
         <p>&copy; Todos os direitos reservados</p>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();

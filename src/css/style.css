@@ -33,10 +33,35 @@
     width: 64px;
     height: 64px;
     position: fixed;
-    bottom: 30px;
-    right: 30px;
+    bottom: 60px;
+    right: 80px;
     border-radius: 50%;
     z-index: 1;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide .container-imagem {
+    width: 800px;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.swiper {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .icon-whatsapp {
@@ -168,9 +193,21 @@
     margin-bottom: 30px;
 }
 
-.descricao .btn-contact:hover {
-    background-color: #000;
+.descricao .btn-contact {
+    background-color: #9e7a59;
     color: #fff;
+    width: 150px;
+    padding: 12px;
+    border-radius: 25px;
+    transition: 0.2s ease-in-out;
+}
+
+.descricao .btn-contact a {
+    color: #fff;
+}
+
+.descricao .btn-contact:hover {
+    transform: scale(1.1);
 }
 
 .redes-sociais a.icon {
@@ -359,21 +396,28 @@
     grid-gap: 10px;
 }
 
-.imagens .container-imagem {
+.container-imagem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
     width: 100%;
     height: 100%;
     cursor: pointer;
     overflow: hidden;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-.imagens .container-imagem .img-projeto {
+.container-imagem .projeto {
+    width: 800px;
+    max-width: 90%;
+}
+
+.projeto .img-projeto {
     width: 100%;
-    height: 100%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
-.imagens .container-imagem .background {
+.projeto .background {
     position: absolute;
     z-index: 2;
     top: 0;
@@ -383,14 +427,16 @@
     background-color: #fff;
     transition: 0.2s ease-in-out;
     opacity: 0;
+    visibility: hidden;
     pointer-events: none;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 
-.imagens .container-imagem:hover .background {
+.projeto:hover .background {
     opacity: 1;
+    visibility: visible;
     pointer-events: all;
 }
 
