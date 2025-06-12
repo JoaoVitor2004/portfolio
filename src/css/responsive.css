@@ -90,6 +90,11 @@
         height: 400px;
     }
 
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
+        display: none;
+    }
+
     .hero {
         padding: 80px 30px 0 30px;
     }
